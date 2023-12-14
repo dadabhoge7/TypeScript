@@ -52,13 +52,25 @@ console.log(c);
 console.log(d);
 
 
-function display(id : number , name : string , role : string = "Guest User"){
-console.log(`Id : ${id}`);
-console.log(`Name : ${name}`);
-console.log(`Role : ${role}`);
-}
-display(101, "Dada");
-display(102, "Shree", "Admin");
+// function display(id : number , name : string , role : string = "Guest User"){
+// console.log(`Id : ${id}`);
+// console.log(`Name : ${name}`);
+// console.log(`Role : ${role}`);
+// }
+// display(101, "Dada");
+// display(102, "Shree", "Admin");
+
+// optional parameter
+
+function display1(id : number , name : string , role ?: string){
+    console.log(`Id : ${id}`);
+    console.log(`Name : ${name}`);
+
+    if (role != undefined) {
+        console.log(`Role : ${role}`);
+    }
+    }
+    display1(101, "Dada");
 
 
 
